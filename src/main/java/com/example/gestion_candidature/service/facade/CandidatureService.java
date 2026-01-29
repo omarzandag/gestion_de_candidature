@@ -14,4 +14,7 @@ public interface CandidatureService {
     List<Candidature> findCandidatureByStatus(String status);
 
     Candidature findCandidatureById(long id);
+
+    @Over
+    List<Candidature> findByStatus(String status);
 }

@@ -9,8 +9,10 @@ import java.util.List;
 
 @Repository
 public interface CandidatureDao extends JpaRepository<Candidature, Long> {
-    Candidature findCandidatureById(long id);
+    Candidature findById(long id);
     List<Candidature> findCandidatureByStatus(String status);
     Candidature findByUserFullName(String userFullName);
     Candidature findByUserEmail(String email);
+
+    List<Candidature> findByStatus(String status);
 }

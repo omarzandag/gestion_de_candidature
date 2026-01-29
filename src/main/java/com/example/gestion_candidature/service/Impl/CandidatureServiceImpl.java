@@ -42,8 +42,17 @@ public class CandidatureServiceImpl implements CandidatureService {
 
     @Override
     public Candidature findCandidatureById(long id) {
-        return dao.findCandidatureById(id);
+        return dao.findById(id);
     }
+
+    @Override
+    public List<Candidature> findByStatus(String status) {
+        return dao.findByStatus(status);
+    }
+
+
+
+
 
     public CandidatureServiceImpl(UserService userservice, CandidatureDao dao) {
         this.userservice = userservice;
