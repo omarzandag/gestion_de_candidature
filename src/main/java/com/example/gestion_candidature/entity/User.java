@@ -16,6 +16,7 @@ public class User {
     private Long id;
     private String firstName;
     private String LastName;
+    private String fullName;
     private Date birthDate;
     private String email;
     private String password;
@@ -46,6 +47,14 @@ public class User {
 
     public void setLastName(String lastName) {
         LastName = lastName;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public Date getBirthDate() {

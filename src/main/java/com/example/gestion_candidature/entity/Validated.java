@@ -11,6 +11,8 @@ public class Validated {
     private Long id;
     private String name;
     private LocalDate date;
+    @OneToMany
+    private List<User> usersValidated;
 
     public Long getId() {
         return id;

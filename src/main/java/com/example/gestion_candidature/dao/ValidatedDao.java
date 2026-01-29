@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ValidatedDao extends JpaRepository<Validated, Long> {
+    Validated findByName(String name);
 }
